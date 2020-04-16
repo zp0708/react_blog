@@ -1,0 +1,10 @@
+.ad-div {
+  margin-left: 0rem;
+  padding: 0rem;
+}
+
+.ad-div div {
+  margin-top: .2rem;
+  border-radius: .3rem;
+  overflow: hidden;
+}
