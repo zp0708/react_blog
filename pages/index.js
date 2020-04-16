@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Header from '../components/Header';
 import Author from '../components/Author';
 import Advert from '../components/Advert';
+import Footer from '../components/Footer';
 
 const Home = () => {
   const [mylist, setMylist] = useState([
@@ -76,6 +77,7 @@ const Home = () => {
           </div>
         </Col>
       </Row>
+      <div><Footer/></div>
     </div>
   );
 };
