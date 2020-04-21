@@ -5,6 +5,11 @@ import Header from '../components/Header';
 import Author from '../components/Author';
 import Advert from '../components/Advert';
 import Footer from '../components/Footer';
+// import { HomeOutlined } from '@antd-design/icons'
+
+import Router from 'next/router';
+
+import Detail from './detail'
 
 const Home = () => {
   const [mylist, setMylist] = useState([
@@ -30,13 +35,17 @@ const Home = () => {
     },
   ]);
 
+  const clickArticleTitle = () => {
+    Router.push('/detail')
+  }
+
   const renderItem = (item) => {
     return (
       <List.Item>
-        <div className='list-title'>{item.title}</div>
+        <div className='list-title' onClick={clickArticleTitle}>{item.title}</div>
         <div className='list-icon'>
           <span>
-            <Icon type='calendar' />
+            <Icon />
             2019-08-09
           </span>
           <span>
