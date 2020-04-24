@@ -7,6 +7,7 @@ import '../static/style/components/author.css'
 import '../static/style/components/advert.css'
 import '../static/style/components/footer.css'
 import 'markdown-navbar/dist/navbar.css'
+import 'highlight.js/styles/monokai-sublime.css';
 
 // This default export is required in a new `pages/_app.js` file.
 export default function App({ Component, pageProps }) {
