@@ -1,25 +1,16 @@
 import React from 'react';
 import { List, Icon } from 'antd';
-import Router from 'next/router';
+import Link from 'next/link';
 
 const ArticleItem = (props) => {
 
   const item = props.article;
   const introduce = props.introduce;
 
-  const clickArticleTitle = (articleId) => {
-    Router.push({
-      pathname:'/detail',
-      query:{
-        id: articleId
-      }
-    })
-  }
-
   return (
     <div>
       <List.Item>
-        <div className='list-title' onClick={()=>{clickArticleTitle(item.id)}}>{item.title}</div>
+        <Link href={'/detail?id=' + item.id} className='list-title'>{item.title}</Link>
         <div className='list-icon'>
           <span>
             <Icon />

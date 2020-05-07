@@ -6,6 +6,7 @@ import '../static/style/pages/detail.css'
 import '../static/style/components/author.css'
 import '../static/style/components/advert.css'
 import '../static/style/components/footer.css'
+import '../static/style/components/ArticleList.css'
 import 'markdown-navbar/dist/navbar.css'
 import 'highlight.js/styles/monokai-sublime.css';
 
